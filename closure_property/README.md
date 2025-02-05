@@ -1,0 +1,1 @@
+This assignment demonstrates the closure property in JavaScript by implementing a counter function, where internal state (counter) is encapsulated and accessed only through defined methods (add and reset). The code showcases how closures enable state preservation and encapsulation in functional programming.
