@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .question {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .choices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .choices button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .next-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            display: none;
+        }
+        .score {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="question" class="question">Question will appear here</div>
+        <div id="choices" class="choices">
+            <!-- Answer buttons will be dynamically added here -->
+        </div>
+        <button id="next-btn" class="next-btn">Next Question</button>
+        <div id="score" class="score"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
