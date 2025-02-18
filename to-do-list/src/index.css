@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.to-do-list {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.to-do-list h1 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.to-do-list input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.to-do-list button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.to-do-list button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.to-do-list button:disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
+
+.to-do-list button:nth-child(2) {
+  background-color: #4caf50;
+  color: white;
+}
+
+.to-do-list button:nth-child(2):hover {
+  background-color: #45a049;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+li input[type="text"] {
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+li span {
+  font-size: 1rem;
+  flex: 1;
+}
+
+li button {
+  font-size: 0.9rem;
+  background-color: #f44336;
+  color: white;
+}
+
+li button:hover {
+  background-color: #e53935;
+}
+
+li button:nth-child(2) {
+  background-color: #2196f3;
+}
+
+li button:nth-child(2):hover {
+  background-color: #1e88e5;
+}
+
+li button:nth-child(3) {
+  background-color: #ff9800;
+}
+
+li button:nth-child(3):hover {
+  background-color: #fb8c00;
+}
